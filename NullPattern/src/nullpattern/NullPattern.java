@@ -25,8 +25,6 @@ public class NullPattern {
         binaryTree.add(7);
         binaryTree.add(22);
         binaryTree.traverseInOrder(binaryTree.getRoot());
-        
-
     }
     
 }

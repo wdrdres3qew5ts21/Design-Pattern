@@ -28,7 +28,6 @@ public class BinaryTree {
         } else if (value > current.getValue()) {
             current.setRightNode(addRecursive(current.getRightNode(), value));
         } else {
-            // value already exists
             return current;
         }
 
@@ -47,7 +46,7 @@ public class BinaryTree {
         return root;
     }
 
-    public void setRoot(Node root) {
+    private void setRoot(Node root) {
         this.root = root;
     }
 
