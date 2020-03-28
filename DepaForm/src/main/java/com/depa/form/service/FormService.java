@@ -5,6 +5,7 @@
  */
 package com.depa.form.service;
 
+import com.depa.form.dao.RequestFormDao;
 import com.depa.form.model.CheckBox;
 import com.depa.form.model.ChoiceOption;
 import com.depa.form.model.Field;
@@ -26,8 +27,13 @@ public class FormService {
 
 //    @Autowired
 //    private FormRepository formRepository;
+    public RequestFormDao createForm(RequestFormDao requestForm) {
+        // Rearrange Order
+        return requestForm;
+    }
+    
     public Form createForm(Form requestForm) {
-        return null;
+        return requestForm;
     }
 
     public Form getForm() {

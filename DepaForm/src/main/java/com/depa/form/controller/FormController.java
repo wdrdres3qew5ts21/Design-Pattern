@@ -5,6 +5,7 @@
  */
 package com.depa.form.controller;
 
+import com.depa.form.dao.RequestFormDao;
 import com.depa.form.model.Form;
 import com.depa.form.service.FormService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +25,12 @@ public class FormController {
     private FormService formService;
     
     @PostMapping("/form")
-    public Form createForm(@RequestBody Form requestForm){
+    public RequestFormDao createForm(@RequestBody  RequestFormDao requestForm){
         return formService.createForm(requestForm);
     }
-    
+
     @GetMapping("/form/mock")
-    public Form createFormMock(){
+    public Form createFormMock() throws Exception{
         return formService.createFormMock();
     }
     
