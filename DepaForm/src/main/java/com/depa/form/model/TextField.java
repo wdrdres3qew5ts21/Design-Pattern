@@ -14,12 +14,11 @@ import javax.persistence.Entity;
  */
 //@Entity
 //@JsonTypeName("TextField")
-public class TextField extends Field{
-    
-    private final FieldType fieldType = FieldType.TextField;   
+public class TextField extends Field {
 
-    public FieldType getFieldType() {
-        return fieldType;
+    public TextField() {
+        fieldType = FieldType.TextField;
     }
+
 
 }

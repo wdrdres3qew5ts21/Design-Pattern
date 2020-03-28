@@ -14,12 +14,10 @@ import java.util.List;
  */
 public class RadioButtonField extends Field {
     
-    private final FieldType fieldType = FieldType.RadioButton;
-    
     private List<ChoiceOption> choiceList = new ArrayList<>();
-
-    public FieldType getFieldType() {
-        return fieldType;
+    
+    public RadioButtonField(){
+        fieldType = FieldType.RadioButton;
     }
 
     public List<ChoiceOption> getChoiceList() {
@@ -44,6 +42,4 @@ public class RadioButtonField extends Field {
         this.choiceList.add(choiceOption);
     }
     
-    
-
 }
